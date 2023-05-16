@@ -7,7 +7,6 @@ import 'package:logger/logger.dart';
 import 'action.dart';
 import 'appbar.dart';
 import 'aspect_ratio.dart';
-import 'badge.dart';
 import 'button.dart';
 import 'camera.dart';
 import 'carousel_slider.dart';
@@ -41,7 +40,6 @@ import 'page_view.dart';
 import 'photo_view.dart';
 import 'pin_with_keyboard.dart';
 import 'positioned.dart';
-import 'qr_image.dart';
 import 'qr_view.dart';
 import 'radio.dart';
 import 'row.dart';
@@ -87,9 +85,6 @@ class SDUIParser {
         break;
       case "aspectratio":
         widget = SDUIAspectRatio();
-        break;
-      case "badge":
-        widget = SDUIBadge();
         break;
       case "bottomnavigationbar":
         widget = SDUIBottomNavigationBar();
@@ -210,9 +205,6 @@ class SDUIParser {
         break;
       case 'positioned':
         widget = SDUIPositioned().fromJson(json);
-        break;
-      case 'qrimage':
-        widget = SDUIQrImage().fromJson(json);
         break;
       case 'qrview':
         widget = SDUIQrView().fromJson(json);
